@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Mes projets</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <header>
+                <div id="navi">
+                <a href="Accueil.html" ><p>Accueil</p></a>
+                <a href="#"><p class="current">Projets</p></a>
+                </div>
+            </header>
+            <main>
+                <div id="projets">
+                    
+                </div>
+                <div id="projetAffiche" class="hide">
+                    
+                </div>
+            </main>
+            <script>
+                // Fonction pour charger et afficher les projets
+                function loadProjects() {
+                    fetch("SAE.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            const container = document.getElementById('projets');
+                            data.Projets.forEach((projet, index) => {
+                                const div = document.createElement('div');
+                                const nom_img = "img/" + projet.name + ".png";
+                                div.className = 'projet';
+                                div.innerHTML = `
+                                    <h2>${projet.name}</h2>
+                                    <label class="image-checkbox">
+                                        <input type="checkbox" class="checkImage" hidden />
+                                        <img src="${nom_img}" alt="image ${projet.name}" data-index="${index}">
+                                    </label>
+                                `;
+                                container.appendChild(div);
+                            });
+                        })
+                        .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                }
+
+                // Fonction pour charger et afficher les détails des projets
+                function loadProjectsDisplayed() {
+                    fetch("SAE.json")
+                        .then(response => response.json())
+                        .then(data => {
+                            const container = document.getElementById('projetAffiche');
+                            data.Projets.forEach((projet, index) => {
+                                const div = document.createElement('div');
+                                div.className = 'projetAffiche hide';
+                                div.id = 'info' + index
+                                div.innerHTML = `
+                                    <button class="details-button" type="button" data-index="${index}"> Retour </button>
+                                    <h2>${projet.name}</h2>
+                                    <p class="statut"> ${projet.statut}</p>
+                                    <p><strong>Objectif:</strong> ${projet.objectif}</p>
+                                    <p><strong>Intitulé:</strong> ${projet.intitulé}</p>
+                                    <p><strong>Thème:</strong> ${projet.thème}</p>
+                                    <p><strong>Nous avons réalisé:</strong> ${projet.nous}</p>
+                                    <p><strong>J'ai réalisé:</strong> ${projet.je}</p>
+                                    <p><strong>Attentes:</strong> ${projet.attente}</p>
+                                    <p><strong>Compétences:</strong> ${projet.compétence}</p>
+                                `;
+                                container.appendChild(div);
+                            });
+                            attachButtonEventHandlers();
+                        })
+                        .catch(error => console.error('Erreur lors du chargement du fichier JSON:', error));
+                }
+
+                function attachButtonEventHandlers() {
+                    document.querySelectorAll('.details-button').forEach(button => {
+                        button.addEventListener('click', function(event) {
+                        // Cachez la section des détails du projet
+                        document.getElementById('projetAffiche').classList.add('hide');
+                        // Affichez la liste des projets
+                        document.getElementById('projets').classList.remove('hide');
+                        });
+                    });
+                }
+
+                // Appeler les fonctions au chargement de la page
+                document.addEventListener('DOMContentLoaded', function() {
+                    loadProjects();
+                    loadProjectsDisplayed();
+                });
+
+                // Gestionnaire de bouton retour
+                document.querySelectorAll('.details-button').forEach(button => {
+                    button.addEventListener('click', function(event) {
+                        // Cachez la section des détails du projet
+                        document.getElementById('projetAffiche').classList.add('hide');
+                        // Affichez la liste des projets
+                        document.getElementById('projets').classList.remove('hide');
+                    });
+                });
+
+                // Gestionnaire de clic pour les images
+                document.addEventListener('click', function(event) {
+                    if (event.target.tagName === 'IMG' && event.target.parentElement.classList.contains('image-checkbox')) {
+                        const index = event.target.dataset.index;
+                        const projetsContainer = document.getElementById('projets');
+                        const detailsContainer = document.getElementById('projetAffiche');
+                        const details = document.getElementById('info' + index);
+
+                        // Masquer tous les détails
+                        detailsContainer.querySelectorAll('.projetAffiche').forEach(div => {
+                            div.classList.add('hide');
+                        });
+
+                        // Afficher les détails du projet cliqué
+                        details.classList.remove('hide');
+
+                        // Basculer la visibilité des conteneurs
+                        projetsContainer.classList.add('hide');
+                        detailsContainer.classList.remove('hide');
+                    }
+                });
+            </script>
+        </body>
+    </html>
