@@ -1,7 +1,7 @@
 {
     "Projets" : [
         {
-            "name" : "SAE 01 - SAE 02",
+            "name" : "Premier projet BUT",
             "statut" : "Terminé",
             "objectif" : "L'objectif principal de cette SAE consistait à conception d'un programmes permettant capable de classifier des dépêches en fonction de certains mots présent dans celles-ci.",
             "intitulé" : "Implémentation d'un besoin client / Comparaison d'approche algorithmique",
@@ -11,7 +11,7 @@
             "attente" : "Il était attendu de nous de réaliser un programme fonctionnel et quasiment automatique, du côté de notre groupe nous sommes parvenus à réaliser les attentes cependant nous avons tenté d'optimiser au plus possible notre programme dès son écriture et non après l'avoir écrit une première fois."
         },
         {
-           "name" : "Méga SAE de première année",
+           "name" : "Méga SAE",
            "statut" : "en cours",
            "objectif" : "Le but de cette MégaSAE consiste à la production d'une application lourde à destination des organisateurs d'événements dans le but de faciliter l'organisation d'événements festives pour les BDE des différents departements.",
            "intitulé" : "MégaSAE",
