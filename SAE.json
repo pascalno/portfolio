@@ -17,8 +17,8 @@
            "intitulé" : "MégaSAE",
            "thème" : "Analyse et conception",
            "nous" : "Notre idée d'application est sur l'organisation d'évenements pour de Bureau Des Elèves (BDE).Nous avons d'abord du réaliser un exercice d'optimisation en mathématique. Puis nous avons réalisé un dossier de conception regroupant des diagrammes de cas d'utilisation, un diagramme de classe et des diagrammes de séquence. Une fois ceci terminer, on s'attaque à la conception visuelle et interne de notre application.Nous avons réalisé pluseirus personnas.",
-           "je" : "Je me suis occupé de créer des fichiers texte regroupant les 101 départements français avec leurs 18 plus grande villes tout ça organisé dans l'ordre des départements et tout ce texte a été fait grâce à un programme qui s'en est chargé seul que j'ai programmé et regroupe 1918 lignes de texte. Je me suis également occupé de coder en Java la partie concernant la classe événements. Pour ce qui est du reste nous avons travaillé en groupe et moins individuellement pour la partie UML et Mathématique notamment.",
-           "attente" : "je me suis occuper principalement de la partie gestion de projet en faisant par exemple le Raci. J'ai aussi participer a la création des diagrammes"
+           "je" : "je me suis occuper principalement de la partie gestion de projet en faisant par exemple le Raci. J'ai aussi participer a la création des diagrammes",
+           "attente" : "L'attente de ce projet est de produire une application lourde et fonctionnelles en utilisant du Java, du JavaFX, de l'XML, de l'UML... tout cela dans le but de faire trois présentation dont une en anglais pour parler de notre application."
         }
         
     ]
