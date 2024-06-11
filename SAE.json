@@ -8,7 +8,7 @@
             "thème" : "Programmation en Java",
             "nous" : "Un programme avec différentes méthodes qui classait les dépêches en fonction d'un lexique défini par catégorie. Nous avons produit plusieurs classes et méthodes pour réaliser ce programme notamment la méthode de classification en fonction d'un lexique au format .txt, la méthode pour rédiger ce lexique et la valeur des mots de manières automatique.",
             "je" : "Je me suis occupé de creer les lexiques de toutes les catégories ainsi que optimiser l'application",
-            "attente" : "Il était attendu de nous de réaliser un programme fonctionnel et quasiment automatique, du côté de notre groupe nous sommes parvenus à réaliser les attentes cependant nous avons tenté d'optimiser au plus possible notre programme dès son écriture et non après l'avoir écrit une première fois.",
+            "attente" : "Il était attendu de nous de réaliser un programme fonctionnel et quasiment automatique, du côté de notre groupe nous sommes parvenus à réaliser les attentes cependant nous avons tenté d'optimiser au plus possible notre programme dès son écriture et non après l'avoir écrit une première fois."
         },
         {
            "name" : "Méga SAE de première année",
@@ -18,7 +18,7 @@
            "thème" : "Analyse et conception",
            "nous" : "Notre idée d'application est sur l'organisation d'évenements pour de Bureau Des Elèves (BDE).Nous avons d'abord du réaliser un exercice d'optimisation en mathématique. Puis nous avons réalisé un dossier de conception regroupant des diagrammes de cas d'utilisation, un diagramme de classe et des diagrammes de séquence. Une fois ceci terminer, on s'attaque à la conception visuelle et interne de notre application.Nous avons réalisé pluseirus personnas.",
            "je" : "Je me suis occupé de créer des fichiers texte regroupant les 101 départements français avec leurs 18 plus grande villes tout ça organisé dans l'ordre des départements et tout ce texte a été fait grâce à un programme qui s'en est chargé seul que j'ai programmé et regroupe 1918 lignes de texte. Je me suis également occupé de coder en Java la partie concernant la classe événements. Pour ce qui est du reste nous avons travaillé en groupe et moins individuellement pour la partie UML et Mathématique notamment.",
-           "attente" : "je me suis occuper principalement de la partie gestion de projet en faisant par exemple le Raci. J'ai aussi participer a la création des diagrammes",
+           "attente" : "je me suis occuper principalement de la partie gestion de projet en faisant par exemple le Raci. J'ai aussi participer a la création des diagrammes"
         }
         
     ]
